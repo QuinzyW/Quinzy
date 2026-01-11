@@ -1,0 +1,57 @@
+languageCode: en-us
+title: Quinzy Blog
+theme: PaperMod
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+menu:
+  main:
+    - identifier: Archive
+      name: 📚 Archive
+      url: /archives/
+      weight: 10
+    - identifier: Tags
+      name: 🏷 Tags
+      url: /tags/
+      weight: 20
+    - identifier: Search
+      name: 🔍 Search
+      url: /search/
+      weight: 30
+params:
+  defaultTheme: "auto" # 自动切换深色/浅色模式
+  ShowCodeCopyButtons: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: true
+  comments: true
+  commentsParams:
+    repo: QJieWang/TJBlog
+    repoId: R_kgDOMJAddg
+    category: Announcements
+    categoryId: DIC_kwDOMJAdds4CgKZZ
+    mapping: pathname
+    reactionsEnabled: 1
+    emitMetadata: 0
+    loading: lazy
+    inputPosition: top
+    lang: zh-CN
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+  editPost:
+    URL: "https://github.com/QuinzyW/Quinzy/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
